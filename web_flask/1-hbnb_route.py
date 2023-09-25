@@ -5,6 +5,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/', strict_slashes=False)
 def hello():
     """Home page of the flask app"""
@@ -15,6 +16,7 @@ def hello():
 def hbnb():
     """hbnb page of the flask app"""
     return 'HBNB'
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
